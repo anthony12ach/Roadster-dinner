@@ -35,7 +35,9 @@ video#bgvideo{
     .call-us{
         display: none;
     }
-  
+  .navbar img{
+        width: 150px;
+  }
 }
 
 /* Home section */
@@ -72,10 +74,7 @@ video#bgvideo{
     background-color: white;
 }
 
-/* 
-no video to work in a small devices: 
-we are gonna hide it and show a picture accroos the whole webpage
- */
+
 
 
  /* about  */
@@ -110,11 +109,11 @@ we are gonna hide it and show a picture accroos the whole webpage
  /* carousel */
 
 
- #Menu{
-    width: 40%;
-    margin: 130px auto;
- }
+ #Menu1{
+    width: 600px;
+    margin: 0 auto;
 
+ }
  .carousel-item h2{
     text-align: center;
  }
@@ -131,6 +130,7 @@ we are gonna hide it and show a picture accroos the whole webpage
 }
 .carousel-item img{
     border-radius: 10%;
+   
 }
 
 .carousel-item h2{
@@ -147,3 +147,57 @@ we are gonna hide it and show a picture accroos the whole webpage
 .menulink:hover{
     color: orange;
 }
+
+.promo{
+    width: 300px;
+    margin: 40px auto;
+
+}
+
+/* 
+no video to work in a small devices: 
+we are gonna hide it and show a picture accroos the whole webpage
+ */
+
+ @media screen and (max-width:768px){
+    .carousel-inner .item img{
+        height: 300px;
+    }
+    .carousel-inner .item h1{
+        font-size: 23px;
+    }
+ }
+
+ @media screen and (max-width:400px){
+    .carousel-inner .item img{
+        height: 200px;
+    }
+    .carousel-inner .item h1{
+        font-size: 17px;
+    }
+ }
+
+
+ /* footer section */
+ .footer{
+    height: 60px;
+    background-color:rgba(29, 167, 179,0.1);
+    color: white;
+    padding: 10px 0;
+    margin-top: 150px;
+    font-size: 15px;
+ }
+ .container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.copyright{
+    padding-right: 80px;
+ }
+
+ .footer p a{
+    color: rgb(255, 214, 214);
+    text-decoration: none;
+    font-size: 18px;
+ }

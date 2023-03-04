@@ -15,6 +15,8 @@
   <link href="style.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
 
+  <!-- jqery link -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 
 <body>
@@ -24,7 +26,7 @@
     <source src="images/BusyRestaurantinEveningVidevo_preview.mp4" type="video/mp4">
   </video>
   <!-- create navigation bar With scrollspy-->
-  <nav class="navbar navbar-expand-lg .bg-dark-subtle ">
+  <nav class="navbar navbar-expand-lg .bg-dark-subtle " id="mynavbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="images/roadster-diner-logo.png" alt="logo">
@@ -95,24 +97,24 @@
 
   <div class="Menutitle" id="Menu">our delicious Menu</div>
   <div id="Menu1" class="carousel slide">
-    
 
-  
+
+
     <div class="carousel-inner mx-auto">
 
-      <div class="carousel-item active">
+      <div class="carousel-item active item">
         <img src="images/img2.jpeg" class="d-block w-100" alt="Super sampler">
         <h2>Super Sampler</h2>
       </div>
-      <div class="carousel-item ">
+      <div class="carousel-item  item">
         <img src="images/CHICKEN-STRIPS.webp" class="d-block w-100" alt="chiken strips">
         <h2>chiken strips</h2>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item item">
         <img src="images/MIGHTY-CHICKEN.webp" class="d-block w-100" alt="might chiken">
         <h2>mighty chiken</h2>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item item">
         <a target="_blank"
           href="https://loyaltyfeed.com/survey/deliverymenurd/roadsterdelivery?layout=launcherh#item=0"> <img
             src="images/menu logo.png" class="d-block w-100" alt="might chiken"></a>
@@ -120,10 +122,12 @@
           <a class="menulink"
             href="https://loyaltyfeed.com/survey/deliverymenurd/roadsterdelivery?layout=launcherh#item=0"
             target="_blank">
-            full menu: press me 
+            full menu: press me
           </a>
         </h2>
+        
       </div>
+      
     </div>
 
     <button class="carousel-control-prev" type="button" data-bs-target="#Menu1" data-bs-slide="prev">
@@ -136,22 +140,20 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
-
+  <div class="promo">
+  <button type="button" class="btn btn-primary" id="promobtn">Get your promo Code Now</button>
+  <p id="promo"></p>
+</div>
   </div>
 
 
-
-
-
-
   <!-- add a footer for our website -->
-
-
-
-
-
-
+  <div class="footer">
+    <div class="container1">
+      <p class="copyright">&copy for anthony.</p>
+      <p>Get more information about us by clicking <a href="https://lnk.bio/roadsterdiner" target="_blank"> here</a></p>
+    </div>
+  </div>
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
@@ -163,10 +165,20 @@
   <script>
     $(function () {
       $('.carousel').carousel({
-        interval: 10000
+        interval: 10
       });
     });
+
+
+    $(document).ready(function(){    
+    $("#promobtn").mouseup(function(){    
+       $( "#promo" ).text( "Use RamiTawil10 now to get 50% on your next order" ).show().fadeOut( 2000 );   
+    });    
+    }); 
+
+
   </script>
+
 </body>
 
 </html>
