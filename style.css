@@ -108,13 +108,10 @@ we are gonna hide it and show a picture accroos the whole webpage
  }
 
  /* carousel */
-<<<<<<< HEAD
- #Menu1{
-    width: 400px;
-=======
+
+
  #Menu{
     width: 40%;
->>>>>>> 03086ee1fc65ebc7cee206d8c27eed98d117b59b
     margin: 130px auto;
  }
 
