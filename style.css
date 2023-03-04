@@ -35,8 +35,38 @@ video#bgvideo{
     .call-us{
         display: none;
     }
+  
 }
 
+/* Home section */
+
+#Home
+{
+    background-color: transparent;
+   color: rgb(0, 0, 0);
+   text-align: center;
+    padding-top: 15%;
+}
+#Home h1 {
+    padding-bottom: 30px;
+}
+#Home h2{
+    padding-bottom: 50px;
+}
+
+#Home .btn{
+    background-color: black;
+    color: orange;
+    font-size: 22px;
+    padding: 8px 20px;
+    border-radius: 8px;
+}
+#Home .btn:hover{
+    background-color: white;
+}
+#home .btn:active{
+    background-color: white;
+}
 
 /* 
 no video to work in a small devices: 
