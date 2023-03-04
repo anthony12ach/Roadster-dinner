@@ -15,15 +15,21 @@ video#bgvideo{
     z-index: -100;
 }
  /* style the navigation bar css generator */
-    .navbar
-    {
-        background-color: black;
-    }
-    
+.navbar
+{
+        background-color: rgb(0, 0, 0);
+}
+ 
 #navbarNav ul li a{
      color: white;
 }
-
+.navbar-toggler-icon{
+ background-color: rgb(196, 193, 193);
+ border-radius: 10%;
+}
+.Calllogo{
+    fill: white;
+}
 
 @media screen and (max-width:991px){
     .call-us{
