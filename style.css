@@ -46,12 +46,15 @@ video#bgvideo{
    color: rgb(0, 0, 0);
    text-align: center;
     padding-top: 15%;
+    margin-bottom: 100px;
 }
 #Home h1 {
     padding-bottom: 30px;
+    text-transform: uppercase;
 }
 #Home h2{
     padding-bottom: 50px;
+    text-transform: uppercase;
 }
 
 #Home .btn{
@@ -60,6 +63,7 @@ video#bgvideo{
     font-size: 22px;
     padding: 8px 20px;
     border-radius: 8px;
+    text-transform: uppercase;
 }
 #Home .btn:hover{
     background-color: white;
@@ -74,5 +78,35 @@ we are gonna hide it and show a picture accroos the whole webpage
  */
 
 
+ /* about  */
+
+.container{
+    max-width: 1000px;
+}
+ #About{
+    padding-top: 100px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    
+ }
+ #About h2{
+    font-weight: bold;
+    text-transform:uppercase;
+ }
+
+ #About p{
+    font-size: 17px;
+    margin-bottom: 30px;
+   text-transform: uppercase;
+   text-align: justify;
+ }
+ .aboutimage
+ {
+   margin-bottom: 50px;
+    height: 200px;
+    border-radius: 20%;
+ }
+
+ 
 
 
