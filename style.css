@@ -121,7 +121,7 @@ video#bgvideo{
  .menuclass{
     margin: 25px;
     padding: 10px;
-    display: none;
+    display: block;
  }
  
   #menucontainer p{
