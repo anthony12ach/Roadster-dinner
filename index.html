@@ -92,66 +92,69 @@
       </div>
     </div>
   </div>
+  <!-- buttons to show the menu and offers -->
+  <div class="buttonss">
 
-  <!-- create carousel for the menu -->
+    <button class="button-28" role="button" id="fullMenu">Menu</button>
+    <button class="button-28" role="button" id="offers">Offers</button>
+  </div>
 
-  <div class="Menutitle" id="Menu">our delicious Menu</div>
-  <div id="Menu1" class="carousel slide">
+  <!-- the full menu -->
+  <div id="Menu" class="text-center menuclass">
+    <div class="containTheMenu">
+      <h1 style="color: white;">your favorite Menu</h1>
+    </div>
+    <div class="container" id="menucontainer">
+      <div class="row ">
+        <div class="col">
+          <p> 20$</p>
+          <img src="images/offre1.jpg" alt="" class="aboutimage">
 
+        </div>
+        <div class="col ">
+          <p> 15$</p>
+          <img src="images/offre2.jpg" alt="" class="aboutimage">
 
+        </div>
+        <div class="col">
+          <p> 10$</p>
+          <img src="images/offre3.jpg" alt="" class="aboutimage">
 
-    <div class="carousel-inner mx-auto">
-
-      <div class="carousel-item active item">
-        <img src="images/img2.jpeg" class="d-block w-100" alt="Super sampler">
-        <h2>Super Sampler</h2>
+        </div>
       </div>
-      <div class="carousel-item  item">
-        <img src="images/CHICKEN-STRIPS.webp" class="d-block w-100" alt="chiken strips">
-        <h2>chiken strips</h2>
+    </div>
+  </div>
+  <!-- the offers menu -->
+   <div id="offer" class="text-center offerclass">
+  <div class="containTheoffer">
+    <h1 style="color: white;">best offers in town </h1>
+  </div>
+  <div class="container" id="offerMenu">
+    <div class="row ">
+      <div class="col">
+        <p> 20$</p>
+        <img src="images/offre1.jpg" alt="" class="aboutimage">
+       
       </div>
-      <div class="carousel-item item">
-        <img src="images/MIGHTY-CHICKEN.webp" class="d-block w-100" alt="might chiken">
-        <h2>mighty chiken</h2>
-      </div>
-      <div class="carousel-item item">
-        <a target="_blank"
-          href="https://loyaltyfeed.com/survey/deliverymenurd/roadsterdelivery?layout=launcherh#item=0"> <img
-            src="images/menu logo.png" class="d-block w-100" alt="might chiken"></a>
-        <h2>
-          <a class="menulink"
-            href="https://loyaltyfeed.com/survey/deliverymenurd/roadsterdelivery?layout=launcherh#item=0"
-            target="_blank">
-            full menu: press me
-          </a>
-        </h2>
+      <div class="col ">
+        <p> 15$</p>
+        <img src="images/offre2.jpg" alt="" class="aboutimage">
         
       </div>
-      
+      <div class="col"> 
+        <p> 10$</p>
+        <img src="images/offre3.jpg" alt="" class="aboutimage">
+        
+      </div>
     </div>
-
-    <button class="carousel-control-prev" type="button" data-bs-target="#Menu1" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#Menu1" data-bs-slide="next">
-
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
-  <div class="promo">
-  <button type="button" class="btn btn-primary" id="promobtn">Get your promo Code Now</button>
-  <p id="promo"></p>
-</div>
-  </div>
-
-
+</div> 
   <!-- add a footer for our website -->
   <div class="footer">
     <div class="container1">
       <p class="copyright">&copy for anthony.</p>
-      <p>Get more information about us by clicking <a href="https://lnk.bio/roadsterdiner" target="_blank"> here</a></p>
+      <p>Get more information about us by clicking <a href="https://lnk.bio/roadsterdiner" target="_blank"> here</a>
+      </p>
     </div>
   </div>
 
@@ -163,18 +166,30 @@
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
   <script>
-    $(function () {
-      $('.carousel').carousel({
-        interval: 10
+
+    // code to show the promo code
+    $(document).ready(function () {
+      $("#promobtn").mouseup(function () {
+        $("#promo").text("Use RamiTawil10 now to get 50% on your next order").show().fadeOut(2000);
+      });
+    });
+    //code to show our full menu
+    $(document).ready(function () {
+      $('#fullMenu').click(function () {
+        $(' .menuclass').css("display", "block");
+        $('.offerclass').css ("display", "none");
+      });
+    });
+
+  // code to show our offers
+  $(document).ready(function () {
+      $('#offers').click(function () {
+        $('.menuclass').css("display", "none");
+        $('.offerclass').css ("display", "block");
       });
     });
 
 
-    $(document).ready(function(){    
-    $("#promobtn").mouseup(function(){    
-       $( "#promo" ).text( "Use RamiTawil10 now to get 50% on your next order" ).show().fadeOut( 2000 );   
-    });    
-    }); 
 
 
   </script>
