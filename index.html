@@ -93,18 +93,45 @@
     </div>
   </div>
   <!-- buttons to show the menu and offers -->
-  <div class="buttonss">
+  <div class="buttonss" id="Menu">
 
     <button class="button-28" role="button" id="fullMenu">Menu</button>
     <button class="button-28" role="button" id="offers">Offers</button>
   </div>
 
   <!-- the full menu -->
-  <div id="Menu" class="text-center menuclass">
+  <div id="fullMenu" class="text-center menuclass">
     <div class="containTheMenu">
       <h1 style="color: white;">your favorite Menu</h1>
     </div>
     <div class="container" id="menucontainer">
+      <div class="row ">
+        <div class="col">
+          <p> Super Sampler</p>
+          <img src="images/img2.jpeg" alt="" class="aboutimage">
+
+        </div>
+        <div class="col ">
+          <p> Chiken strips</p>
+          <img src="images/CHICKEN-STRIPS.webp" alt="" class="aboutimage">
+
+        </div>
+        <div class="col">
+          <p> MIGHTY-CHICKEN</p>
+          <img src="images/MIGHTY-CHICKEN.webp" alt="" class="aboutimage">
+        </div>
+      </div>
+      <button class="button-28" role="button" id="menubtn"><a target="_blank"
+          href="https://loyaltyfeed.com/survey/deliverymenurd/roadsterdelivery?layout=launcherh#item=0">full
+          menu</a></button>
+    </div>
+  </div>
+  <!-- the offers menu -->
+  <div id="offer" class="text-center offerclass">
+    <div class="containTheoffer">
+      <h1 style="color: white;">best offers in town </h1>
+    </div>
+    <div class="container" id="offerMenu">
       <div class="row ">
         <div class="col">
           <p> 20$</p>
@@ -124,31 +151,6 @@
       </div>
     </div>
   </div>
-  <!-- the offers menu -->
-   <div id="offer" class="text-center offerclass">
-  <div class="containTheoffer">
-    <h1 style="color: white;">best offers in town </h1>
-  </div>
-  <div class="container" id="offerMenu">
-    <div class="row ">
-      <div class="col">
-        <p> 20$</p>
-        <img src="images/offre1.jpg" alt="" class="aboutimage">
-       
-      </div>
-      <div class="col ">
-        <p> 15$</p>
-        <img src="images/offre2.jpg" alt="" class="aboutimage">
-        
-      </div>
-      <div class="col"> 
-        <p> 10$</p>
-        <img src="images/offre3.jpg" alt="" class="aboutimage">
-        
-      </div>
-    </div>
-  </div>
-</div> 
   <!-- add a footer for our website -->
   <div class="footer">
     <div class="container1">
@@ -177,15 +179,15 @@
     $(document).ready(function () {
       $('#fullMenu').click(function () {
         $(' .menuclass').css("display", "block");
-        $('.offerclass').css ("display", "none");
+        $('.offerclass').css("display", "none");
       });
     });
 
-  // code to show our offers
-  $(document).ready(function () {
+    // code to show our offers
+    $(document).ready(function () {
       $('#offers').click(function () {
         $('.menuclass').css("display", "none");
-        $('.offerclass').css ("display", "block");
+        $('.offerclass').css("display", "block");
       });
     });
 

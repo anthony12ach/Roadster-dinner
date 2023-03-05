@@ -105,8 +105,15 @@ video#bgvideo{
     height: 200px;
     border-radius: 20%;
  }
+/* buttons */
+.buttonss{
+    display: flex;
+    justify-content: center;
 
+    margin-top: 50px;
+  }
  /* Menu */
+
  .containTheMenu{
     text-align: center;
    margin-bottom: 25px;
@@ -141,10 +148,7 @@ video#bgvideo{
     font-weight: bolder;
     color:white;
   }
-  .buttonss{
-    display: flex;
-    justify-content: center;
-  }
+  
 
 
   .button-28 {
@@ -188,6 +192,13 @@ video#bgvideo{
   .button-28:active {
     box-shadow: none;
     transform: translateY(0);
+  }
+  .button-28 a{
+    text-decoration: none;
+    color: white;
+  }
+  .button-28 a:hover{
+    color: orange;
   }
   
 
