@@ -2,18 +2,22 @@
 --add font family to the whole page
 */
 
-
 /* video:  
 set the video as a background, make it fixed,
 make sure it appears behind all elements
 make it spread across the whole webpage
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&family=Roboto+Slab:wght@300&display=swap');
+
 video#bgvideo{
     position: fixed;
     min-height: 100%;
     min-width: 100%;
     z-index: -100;
+   
 }
+
  /* style the navigation bar css generator */
 .navbar
 {
@@ -44,22 +48,26 @@ video#bgvideo{
 
 #Home
 {
-
-   background-repeat: no-repeat;
+  background-color:rgba(53, 75, 77, 0.25);
    color: rgb(0, 0, 0);
    text-align: center;
     padding-top: 15%;
-    margin-bottom: 100px;
+    padding-bottom: 10px;
+    /* margin-bottom: 100px; */
 }
 #Home h1 {
     padding-bottom: 30px;
     text-transform: uppercase;
     color: white;
+    font-family: 'Markazi Text', serif;
+font-family: 'Roboto Slab', serif;
 }
 #Home h2{
     padding-bottom: 50px;
     text-transform: uppercase;
     color: white;
+    font-family: 'Markazi Text', serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 #Home .btn{
@@ -69,6 +77,7 @@ video#bgvideo{
     padding: 8px 20px;
     border-radius: 8px;
     text-transform: uppercase;
+  
 }
 #Home .btn:hover{
     background-color: white;
@@ -85,47 +94,60 @@ video#bgvideo{
 
 .container{
     max-width: 1000px;
+    
 }
  #About{
     padding-top: 100px;
     color: rgb(0, 0, 0);
     text-align: center;
-    
+    background-color:rgba(53, 75, 77, 0.25);
  }
  #About h2{
     font-weight: bold;
     text-transform:uppercase;
+    color: white;
+    font-family: 'Markazi Text', serif;
+font-family: 'Roboto Slab', serif;
  }
 
  #About p{
-    font-size: 17px;
-    margin-bottom: 30px;
+    font-size: 15px;
+    /* margin-bottom: 30px; */
    text-transform: uppercase;
    text-align: justify;
+   font-weight: bold;
+   color: whitesmoke;
+   font-family: 'Markazi Text', serif;
+font-family: 'Roboto Slab', serif;
  }
  .aboutimage
  {
    margin-bottom: 50px;
     height: 200px;
+    width: fit-content;
     border-radius: 20%;
  }
 /* buttons */
 .buttonss{
     display: flex;
     justify-content: center;
-
-    margin-top: 50px;
+  /* padding-top: 50px; */
+    /* margin-top: 50px; */
+  
   }
  /* Menu */
 
  .containTheMenu{
     text-align: center;
    margin-bottom: 25px;
+   font-family: 'Markazi Text', serif;
+font-family: 'Roboto Slab', serif;
  }
  .menuclass{
-    margin: 25px;
+    /* margin: 25px; */
     padding: 10px;
     display: block;
+    background-color:rgba(53, 75, 77, 0.25);
  }
  
   #menucontainer p{
@@ -133,17 +155,22 @@ video#bgvideo{
     text-transform: uppercase;
     font-weight: bolder;
     color:white;
+    font-family: 'Markazi Text', serif;
+font-family: 'Roboto Slab', serif;
   }
 
   /* Offers */
   .containTheoffer{
     text-align: center;
    margin-bottom: 25px;
+   font-family: 'Markazi Text', serif;
+font-family: 'Roboto Slab', serif;
  }
  .offerclass{
-    margin: 25px;
+    
     padding: 10px;
     display: none;
+    background-color:rgba(53, 75, 77, 0.25 );
  }
  
   #offerMenu p{
@@ -151,6 +178,8 @@ video#bgvideo{
     text-transform: uppercase;
     font-weight: bolder;
     color:white;
+    font-family: 'Markazi Text', serif;
+    font-family: 'Roboto Slab', serif;
   }
   
 
@@ -160,7 +189,7 @@ video#bgvideo{
     background-color: rgb(0, 0, 0);
     border: 2px solid #1A1A1A;
     box-sizing: border-box;
-    border-radius: 5%;
+
     color: #FFFFFF;
     cursor: pointer;
     display: inline-block;
@@ -217,8 +246,9 @@ video#bgvideo{
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-    
+   
   }
+  
 
   label {
     display: block;
@@ -267,7 +297,7 @@ video#bgvideo{
  /* footer section */
  .footer{
     height: 60px;
-    background-color:rgba(29, 167, 179,0.1);
+    background-color:rgba(29, 167, 179,0.2);
     color: white;
     padding: 10px 0;
     margin-top: 150px;
