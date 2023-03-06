@@ -37,9 +37,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav m-lg-auto">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#Home">Home</a>
-          </li>
+          
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#About">About</a>
           </li>
@@ -47,7 +45,7 @@
             <a class="nav-link" href="#Menu">Menu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact us</a>
+            <a class="nav-link" href="#contactus">Contact us</a>
           </li>
         </ul>
       </div>
@@ -63,7 +61,7 @@
       </div>
     </div>
   </nav>
-
+  
   <!-- create the home section with title, goal, and check menu button -->
   <div class="jumbotron" id="Home">
     <div class="container">
@@ -154,6 +152,36 @@
     </div>
   </div>
 
+  <!-- contact us -->
+
+  <form action="#" method="post" id="contactus">
+    <div class="allear">
+      <img src="images/WE-ARE-ALL-EARS-roadster.png" alt="logo">
+    </div>
+    <label for="full-name">Full Name</label>
+    <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+  
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+  
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+  
+    <label for="info">More information about the subject</label>
+    <textarea id="info" name="info" placeholder="Enter your message" required></textarea>
+  
+    <button type="submit" class="submitbtn" id="submitbtn">submit</button>
+
+  </form>
+
+  <!-- message after taking the information -->
+
+    <form action="#" method="post" class="msg">
+      <h1>thank you for your interest, we will contact you as soon as possible</h1>
+    </form>
+
+  
+
   <!-- add a footer for our website -->
   <div class="footer">
     <div class="container1">
@@ -193,6 +221,20 @@
         $('.offerclass').css("display", "block");
       });
     });
+
+    // code to hide the input and show the message
+
+    $(document).ready(function()
+    {
+      $('#submitbtn').click(function()
+      {
+        $('#contactus').css("display","none");
+        $('.msg').css('display',"block");
+      })
+    })
+
+    
+
 
   </script>
 
